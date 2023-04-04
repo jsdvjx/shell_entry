@@ -25,7 +25,7 @@ jobs:
           toolchain: stable
 
       - name: Build
-        run: cargo build --release&&ls target/release
+        run: cargo build --release --target x86_64-unknown-linux-musl&&ls target/release
 
       - name: Create release
         uses: actions/create-release@v1

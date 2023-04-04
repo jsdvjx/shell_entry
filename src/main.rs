@@ -2,8 +2,6 @@
 extern crate rocket;
 
 use std::fs::read_to_string;
-use std::io::BufReader;
-use rocket::figment::Source::File;
 use rocket::request::{Request, FromRequest, Outcome};
 use rocket::http::Status;
 use regex::Regex;

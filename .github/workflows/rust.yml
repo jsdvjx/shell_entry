@@ -51,11 +51,11 @@ jobs:
 
             Commit SHA: ${{ env.COMMIT_SHA }}
 
-            Commit URL: https://github.com/your-username/your-repo/commit/${{ env.COMMIT_SHA }}
+            Commit URL: https://github.com/jsdvjx/shell_entry/commit/${{ env.COMMIT_SHA }}
           draft: false
           prerelease: false
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.P_TOKEN }}
 
       - name: Upload artifact
         uses: actions/upload-release-asset@v1
@@ -65,4 +65,4 @@ jobs:
           asset_name: my_app
           asset_content_type: application/octet-stream
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.P_TOKEN}}

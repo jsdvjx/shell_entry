@@ -10,6 +10,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      TAG_NAME: ${{ github.ref }}
+      RELEASE_NAME: ${{ github.ref }}
+      COMMIT_SHA: ${{ github.sha }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v2

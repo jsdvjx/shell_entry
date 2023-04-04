@@ -61,8 +61,8 @@ jobs:
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./target/release/my_app
-          asset_name: my_app
+          asset_path: ./target/release/shell_entry
+          asset_name: shell_entry
           asset_content_type: application/octet-stream
         env:
           GITHUB_TOKEN: ${{ secrets.P_TOKEN}}
